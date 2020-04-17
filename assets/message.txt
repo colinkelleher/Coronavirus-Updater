@@ -1,3 +1,1 @@
-Total IRISH Coronavirus Cases: ${corona_total_count}
-Total IRISH Coronavirus Cases deaths: ${corona_total_count_deaths}
-Total IRISH Coronavirus Cases recovered: ${corona_total_count_recovered}
+${data}
