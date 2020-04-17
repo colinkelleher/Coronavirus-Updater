@@ -19,9 +19,7 @@ def read_template(filename):
 def send_email():
     msg = MIMEMultipart()       # create a message
 
-        message = read_template('../assets/message.txt').substitute(corona_total_count=scraper.corona_total_count(), 
-                                                                    corona_total_count_deaths=scraper.corona_total_count_deaths(),
-                                                                    corona_total_count_recovered=scraper.corona_total_count_recovered())
+  message = read_template('../assets/message.txt').substitute(data=scraper.coronaStats())
 
     # setup the parameters of the message
     msg['From']=MY_ADDRESS
